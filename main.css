@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Anton&family=Exo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.wrapHead{
+    width: 90%;
+    margin: 0 auto;
+    transition: all ease-in-out 0.5s;
+}
+
+.wrapHead.fixed-to-top{
+    width: 96%;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background: #dab75a;
+    padding: 0;
+    z-index: 1;
+    transition: all ease-in-out 0.5s;
+}
+
+header:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header.fixed-to-top{
+    background: rgb(238, 211, 76);
+}
+
+#brand{
+    font-family: 'Anton', sans-serif;
+    color: #8b610f;
+    float: left;
+}
+
+nav{
+    float: right;
+    margin-top: 15px;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 4px;
+}
+
+nav li a{
+    padding: 10px 0;
+    text-decoration: none;
+    color: #8b610f;
+    transition: all ease-in-out 0.5s;
+}
+
+nav li a:hover{
+    color: rgb(255, 255, 255);
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+
+section h2{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    text-transform: capitalize;
+    text-shadow: 10px 10px 3px rgba(0,0,0, 0.2);
+}
+
+#beranda{
+    background-image: url('images/header-background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 700px;
+}
+    
+.overlay{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+}
+    
+.description{
+    left: 50%;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+}
+    
+.logo{
+    border-radius: 300px;
+    height: 300px;
+    width: 300px;
+    margin-top: 180px;
+}
+    
+.description h1{
+    color: #8b610f;
+    font-family: 'Anton', sans-serif;
+    font-size: 80px;
+    text-shadow: #dab75a -3px 3px 0px;
+}
+    
+.description p{
+    color: #dab75a;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+#menu{
+    background: #f1ee93;
+    height: 3000px;
+}
+
+.tittle{
+     display: block;
+     font-family: 'Amatic SC', cursive;
+     color: #8b610f;
+     font-size: 100px;
+     text-align: center;
+     margin-top: 45px;
+}
+
+.row{
+    padding: 50px 0;
+}
+
+.garis{
+    display: block;
+    position: absolute;
+    width: auto;
+    height: auto;
+}
+
+p{
+    text-align: center;
+    color: #4b3509;
+    font-family: 'exo', sans-serif;
+}
+
+.features {
+    margin: 0 5em;
+    padding: 1em;
+    position: relative;
+    
+}
+
+.features img {
+    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 16px;
+}
+
+.features .form-control,
+.features input {
+    border-radius: 0;
+}
+
+.features .btn {
+    background-color: #589b37;
+    border: 1px solid #589b37;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.features .btn:hover {
+    background-color: #333;
+    border: 1px solid #333;
+}
+
+#promo{
+    background:#ece86d ;
+}
+
+#promo h1{
+    font-family: 'Amatic SC', cursive;
+    color: #8b610f;
+    font-size: 100px;
+    text-align: center;
+}
+
+#lokasi{
+    background: #f1ee93;
+}
+
+#lokasi h1{
+    font-family: 'Amatic SC', cursive;
+    color: #8b610f;
+    font-size: 100px;
+}
+
+#kontak{
+    background: #f1ee93;
+}
+
+#kontak h1{
+    font-family: 'Amatic SC', cursive;
+    color: #8b610f;
+    font-size: 100px;
+}
+  
