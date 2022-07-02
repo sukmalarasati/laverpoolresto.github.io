@@ -24,4 +24,43 @@ $(document).ready(function(){
            scrollTop: $(this.hash).offset().top
         }, 500);
      });
+
+     window.navBrand = $("#brand")
+     window.navBtn = $(".wrapHead .btn")
+     window.navId = $(".wrapHead .btn")[0].getAttribute("data-bs-toggle")
+     window.nav = document.getElementById(navId)
+     window.navShow = false
+
+     window.onresize = () => {
+      var width = window.innerWidth
+      if(width <= 550){
+        window.navShow = false
+        $(nav).hide()
+        navBtn.show()
+        navBrand.css({"float" : "none"})
+        $(nav).css({"float" : "none"})
+        $("nav ul li").css({"display":"block"})
+      }
+      else {
+        window.navShow = true
+        $(nav).show()
+        navBtn.hide()
+        navBrand.css({"float" : "left"})
+        $(nav).css({"float" : "right"})
+        $("nav ul li").css({"display":"inline-block"})
+      }
+     }
+
+     onresize()
+
+     navBtn.on("click", () => {
+      if(window.navShow) $(nav).hide()
+      else $(nav).show()
+      window.navShow = !window.navShow
+     })
+
+     $("img").on("click", (e) => {
+      var x = e.target.getAttribute("href")
+      if(x != null) location.href = x
+     })
   });

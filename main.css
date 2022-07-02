@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Anton&family=Exo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster+Two&family=Exo&display=swap');
 
 *{
     margin: 0;
@@ -18,6 +18,10 @@ ul{
 
 .wrapHead.fixed-to-top{
     width: 96%;
+}
+
+.wrapHead .btn {
+    margin-top: 13px;
 }
 
 header{
@@ -52,7 +56,7 @@ nav{
 
 nav li{
     display: inline-block;
-    margin: 0 4px;
+    margin: 0 8px;
 }
 
 nav li a{
@@ -125,14 +129,50 @@ section h2{
     line-height: 1.5;
 }
 
-#menu{
-    background: #f1ee93;
-    height: 3000px;
+#tentangkami{
+    background: #eccb6f;
+    height: auto;
 }
 
-.tittle{
+.text{
+    text-align: center;
+    margin: 50px 0;
+    color: #4b3509;
+}
+
+.text b{
+    font-weight: bold;
+}
+
+#menu{
+    background: #e9d766;
+    height: auto;
+}
+
+.mode5 { 
+    -webkit-transition-duration: 0.5s; 
+    -moz-transition-duration: 0.5s; 
+    -o-transition-duration: 0.5s; 
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+} 
+
+div > .mode5 {
+    padding: 10px;
+}
+    
+.mode5:hover { 
+    -webkit-transform:scale(1.05); 
+    -moz-transform:scale(1.05); 
+    -o-transform:scale(1.05); 
+    opacity: 1; 
+    z-index: 2; 
+}
+
+.title{
      display: block;
-     font-family: 'Amatic SC', cursive;
+     font-family: 'Lobster Two', cursive;
      color: #8b610f;
      font-size: 100px;
      text-align: center;
@@ -140,85 +180,78 @@ section h2{
 }
 
 .row{
-    padding: 50px 0;
+    padding: 10px 0;
 }
 
-.garis{
-    display: block;
-    position: absolute;
-    width: auto;
-    height: auto;
+.subtitle h1{
+    font-family: 'Lobster Two', cursive;
+    color: #8b610f;
+    margin: 30px 0;
 }
 
 p{
+    margin: 30px 20px 50px 0;
     text-align: center;
     color: #4b3509;
     font-family: 'exo', sans-serif;
 }
 
-.features {
-    margin: 0 5em;
-    padding: 1em;
-    position: relative;
-    
-}
-
-.features img {
-    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-    margin-bottom: 16px;
-}
-
-.features .form-control,
-.features input {
-    border-radius: 0;
-}
-
-.features .btn {
-    background-color: #589b37;
-    border: 1px solid #589b37;
-    color: #fff;
-    margin-top: 20px;
-}
-
-.features .btn:hover {
-    background-color: #333;
-    border: 1px solid #333;
-}
-
 #promo{
-    background:#ece86d ;
+    background:#ece86d;
+    height: auto;
 }
 
 #promo h1{
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Lobster Two', cursive;
     color: #8b610f;
     font-size: 100px;
     text-align: center;
 }
 
-#promo .garis {
-    text-align: center;
-}
-
-#lokasi{
+#galeri{
     background: #f1ee93;
+    height: auto;
+    padding-bottom: 30px;
 }
 
-#lokasi h1{
-    font-family: 'Amatic SC', cursive;
+#galeri h1{
+    font-family: 'Lobster Two', cursive;
     color: #8b610f;
     font-size: 100px;
+    text-align: center;
+}
+
+#demo {
+    margin: 0px auto;
+    width: 60%;
 }
 
 #kontak{
-    background: #f1ee93;
+    background: #dab75a;
+    height: auto;
 }
 
-#kontak h1{
-    font-family: 'Amatic SC', cursive;
-    color: #8b610f;
-    font-size: 100px;
+.page-footer{
+    margin: 30px;
 }
-  
+
+
+@media (max-width: 575.98px) {
+    .description {
+        left: 0;
+        padding: 0 15px;
+        position: absolute;
+        top: 10%;
+        transform: none;
+        text-align: center;
+    }
+    .description h1 {
+        font-size: 2em;
+    }
+    .description p {
+        font-size: 1.2rem;
+    }
+    .features {
+        margin: 0;
+    }
+}     
